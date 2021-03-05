@@ -1,0 +1,43 @@
+.message-list {
+  padding: 0 30rpx;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #DBDBDB;
+  font-size: 28rpx;
+}
+
+.middle {
+  margin-top: 30rpx;
+  color: #5F5F5F;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  align-items: center;
+}
+
+.date {
+  color: #BCBCBC;
+}
+
+.user-button {
+  color: #ffffff;
+  border-radius: 32rpx;
+  padding: 2rpx 30rpx;
+  font-size: 28rpx;
+  background-color: #DE2127;
+}
+
+.no-more {
+  text-align: center;
+  color: #959396;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}

@@ -1,0 +1,155 @@
+/**index.wxss**/
+.swiper {
+  border-top: 10rpx solid #EFBA2C;
+  border-bottom: 10rpx solid #DE2127;
+}
+
+.swiper-item {
+  width: 100%;
+}
+
+.position-switch {
+  color: #ffffff;
+  background-color: #EFBA2C;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding: 10rpx;
+}
+
+.position-switch-button {
+  border: 2rpx solid #ffffff;
+  border-radius: 32rpx;
+  padding: 2rpx 20rpx;
+}
+
+.sku-items {
+  margin-bottom: 76rpx;
+}
+
+.sku-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+
+.sku-item-left {
+  display: flex;
+}
+
+.sku-img-wrap {
+  width: 240rpx;
+  height: 218rpx;
+  overflow: hidden;
+}
+
+.sku-img {
+  width: 100%;
+  height: inherit;
+}
+
+.sku-detail {
+  margin-left: 10rpx;
+  position: relative;
+  flex: 1;
+}
+
+.sku-name {
+  font-size: 32rpx;
+}
+
+.sku-desc {
+  color: #959396;
+  margin-top: 10rpx;
+  font-size: 32rpx;
+}
+
+.sku-price {
+  color: #DE2127;
+  position: absolute;
+  bottom: 0;
+}
+
+.sku-item-right {
+  position: relative;
+  width: 168rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sku-select {
+  display: flex;
+}
+
+.sku-noselect-hide {
+  margin-right: 10rpx;
+}
+
+.sku-button {
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  background-color: #EFBA2C;
+  border-radius: 32rpx;
+  padding: 2rpx 20rpx;
+  white-space: nowrap;
+  font-size: 32rpx;
+}
+
+.pay-line {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  color: #ffffff;
+  width: 100%;
+  line-height: 2;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.pay-line-left {
+  flex: 4;
+  background-color: #DE2127;
+  position: relative;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.pay-price-corner {
+  background-color: #DE2127;
+  transform: skew(-40deg);
+  width: 76rpx;
+  height: 76rpx;
+  position: absolute;
+  right: -45rpx;
+  top: 0;
+}
+
+.pay-button {
+  flex: 1;
+  background-color: #EFBA2C;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */

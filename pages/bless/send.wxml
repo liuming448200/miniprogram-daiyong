@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="bless-item">
+      <view class="user-message">
+        <textarea placeholder="请输入" maxlength="300" style="width: 100%;" value="{{message}}" bindinput="bindTextAreaInput"></textarea>
+      </view>
+      <view class="user-letter-number">{{message.length}}/300</view>
+    </view>
+    <view class="user-button-group">
+      <view class="user-button user-button-left" bindtap="reset">重置</view>
+      <view class="user-button user-button-right" bindtap="submit">提交</view>
+    </view>
+  </view>
+</view>

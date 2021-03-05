@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="userinfo">
+    <view class="user-info">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="userinfo-nickname">
+          <view>{{userInfo.nickName}}</view>
+          <view>待用爱心积分：<text class="point">10</text></view>
+        </view>
+      </block>
+    </view>
+    <navigator class="notice" url="/pages/message/index">
+      <mp-icon icon="comment" color="#EFBA2C" size="30"></mp-icon>
+      <view class="red-dot"></view>
+    </navigator>
+  </view>
+  <view class="menus-wrap">
+    <view class="menus">
+      <navigator class="menu" url="/pages/order/index">
+        <view class="menu-common">
+          <mp-icon type="field" icon="folder" color="#DE2127" size="30"></mp-icon>
+        </view>
+        <text class="menu-text">我的订单</text>
+      </navigator>
+      <navigator class="menu" url="/pages/point/index">
+        <view class="menu-common">
+          <mp-icon type="field" icon="photo-wall" color="#DE2127" size="30"></mp-icon>
+        </view>
+        <text class="menu-text">我的积分</text>
+      </navigator>
+      <navigator class="menu" url="/pages/point/rank">
+        <view class="menu-common">
+          <mp-icon type="field" icon="pause" color="#DE2127" size="30"></mp-icon>
+        </view>
+        <text class="menu-text">待用排行</text>
+      </navigator>
+      <navigator class="menu" url="/pages/mine/activity">
+        <view class="menu-common">
+          <mp-icon type="field" icon="like" color="#DE2127" size="30"></mp-icon>
+        </view>
+        <text class="menu-text">我的活动</text>
+      </navigator>
+    </view>
+  </view>
+</view>

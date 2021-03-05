@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/activity/index",
+    "pages/aboutUs/index",
+    "pages/mine/index",
+    "pages/order/index",
+    "pages/bless/index",
+    "pages/bless/send",
+    "pages/point/index",
+    "pages/point/rank",
+    "pages/activity/detail",
+    "pages/mine/activity",
+    "pages/message/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTitleText":"爱心商城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#9B9DB1",
+    "selectedColor":"#53C8C2",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"images/tabbar/icon-HaimaUnclicked.png",
+        "selectedIconPath":"images/tabbar/icon-HaimaClicked.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/activity/index",
+        "iconPath":"images/tabbar/icon-KidsUnclicked.png",
+        "selectedIconPath":"images/tabbar/icon-KidsClicked.png",
+        "text":"活动"
+      },
+      {
+        "pagePath":"pages/aboutUs/index",
+        "iconPath":"images/tabbar/icon-EduUnclicked.png",
+        "selectedIconPath":"images/tabbar/icon-EduClicked.png",
+        "text":"关于"
+      },
+      {
+        "pagePath":"pages/mine/index",
+        "iconPath":"images/tabbar/icon-MyUnclicked.png",
+        "selectedIconPath":"images/tabbar/icon-MyClicked.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "useExtendedLib":{
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

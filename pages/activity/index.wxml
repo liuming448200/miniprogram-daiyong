@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="activity-items">
+    <navigator class="activity-item" url="/pages/activity/detail">
+      <view class="activity-img-wrap">
+        <image class="activity-img" src="https://mmbiz.qpic.cn/mmbiz_jpg/Uucib1QVhcic3psu1g4tYyzf6Q0kcWpJmWmELBPLeajDkz894PyYxNbnCYfCyzRouFRZooPM7mBwibV4DZRWnGC4Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1"></image>
+      </view>
+      <view class="activity-detail">
+        <view class="activity-firstline">
+          <view class="activity-name">与环卫工人同行——12月</view>
+          <view class="activity-button">进行中</view>
+        </view>
+        <view class="activity-desc">待用长沙与长沙交通广播以及哇哈哈联合举办的爱心公益活动</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="no-more">没有更多数据</view>
+</view>

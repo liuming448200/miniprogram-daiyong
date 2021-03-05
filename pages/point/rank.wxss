@@ -1,0 +1,57 @@
+.header {
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user-button {
+  color: #ffffff;
+  border-radius: 32rpx;
+  padding: 2rpx 30rpx;
+  font-size: 32rpx;
+  background-color: #EFBA2C;
+}
+
+.user-button.active {
+  background-color: #DE2127;
+}
+
+.current {
+  padding: 30rpx;
+  border-bottom: 2px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.point {
+  color: #DE2127;
+}
+
+.rank-list {
+  padding: 30rpx;
+}
+
+.rank-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rank-item-data {
+  display: flex;
+}
+
+.rank-item-point {
+  margin-right: 100rpx;
+}
+
+.rank-item:nth-child(1) {
+  color: #DE2127;
+}
+
+.rank-item:nth-child(2) {
+  color: #FE7B1C;
+}
+
+.rank-item:nth-child(3) {
+  color: #EFBA2C;
+}

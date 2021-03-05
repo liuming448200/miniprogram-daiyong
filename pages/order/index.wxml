@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="sku-items">
+    <view class="sku-item" wx:for="{{items}}" wx:key="id">
+      <view class="sku-item-left">
+        <view class="sku-img-wrap">
+          <image class="sku-img" src="{{item.img}}"></image>
+        </view>
+        <view class="sku-detail">
+          <view class="sku-name">{{item.name}}</view>
+          <view class="sku-select sku-price" style="color:inherit;">
+            <view class="sku-noselect-hide"><mp-icon icon="more2" color="{{1 === item.selectedNum ? 'gray' : 'black'}}" bindtap="removeProduct" data-id="{{item.id}}"></mp-icon> {{item.selectedNum}}</view>
+            <mp-icon type="field" icon="add2" color="#DE2127" bindtap="addProduct" data-id="{{item.id}}"></mp-icon>
+          </view>
+        </view>
+      </view>
+      <view class="sku-item-right">
+        <view class="sku-select" bindtap="selectProduct" data-id="{{item.id}}">
+          <icon class="icon-small" type="circle" size="23" wx:if="{{!item.selectedFlag}}"></icon>
+          <icon class="icon-small" type="success" size="23" color="#EFBA2C" hidden="{{!item.selectedFlag}}"></icon>
+        </view>
+        <view class="sku-price">¥ {{item.totalPrice}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="pay-line">
+    <view class="pay-line-left" style="flex:2;">
+      <view class="pay-price">合计：{{totalPrice}}元</view>
+    </view>
+    <view class="pay-button" style="flex:3; background-color: {{0 === totalPrice ? 'gray' : ''}}" bindtap="pay">
+      <mp-icon type="field" icon="shop" color="#ffffff" data-id="{{item.id}}"></mp-icon> 立即支付
+    </view>
+  </view>
+</view>

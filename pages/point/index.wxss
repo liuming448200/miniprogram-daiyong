@@ -1,0 +1,34 @@
+.container {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.current {
+  padding: 30rpx;
+  border-bottom: 2px solid #dbdbdb;
+}
+
+.point {
+  color: #DE2127;
+}
+
+.current-tip {
+  color: #A0A0A0;
+  font-size: 28rpx;
+}
+
+.history {
+  padding: 30rpx;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.history-item-left {
+  font-size: 28rpx;
+  color: #575757;
+}

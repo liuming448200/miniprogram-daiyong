@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="header">
+    <view class="title">
+      <view>与环卫工人同行——11月暖心公益活动</view>
+      <button class="user-button" style="width: auto;" bindtap="join" disabled="{{enrollFlag}}">我要参加</button>
+    </view>
+    <view class="extra">发起人：待用长沙 开始时间：2021-01-25 09:43:00</view>
+  </view>
+  <view class="content">
+    <view class="desc">
+      待用长沙项目组将在11月底举行大型的冬日给环卫工人送温暖的活动，娃哈哈集团赞助的相关食品以及环卫工人最需要的洗衣粉、洗发水之类的物资将由项目组的成员交到环卫工人手中。与项目组合作的爱心商家将为环卫工人们准备爱心午餐，将城市中人们的爱心融入一碗热乎乎的汤面。
+    </view>
+    <view class="enroll" wx:if="{{clickJoin && !enrollFlag}}">
+      <view>我要报名</view>
+      <view class="tip">您的个人信息我们将严格保密，请放心填写</view>
+      <form class="form-style" catchsubmit="formSubmit">
+        <input class="input-style" name="name" placeholder="在此输入姓名" />
+        <input class="input-style" name="age" placeholder="在此输入年龄" />
+        <input class="input-style" name="mobile" placeholder="在此输入手机号码" />
+        <button class="button-style" style="background-color: #DE2127;" type="primary" size="mini" formType="submit">提交报名</button>
+      </form>
+    </view>
+    <view class="enroll" wx:if="{{enrollFlag}}">您已报名，谢谢！</view>
+    <view class="impression">
+      <view>活动感想</view>
+      <view class="no-more">没有更多数据</view>
+    </view>
+  </view>
+</view>

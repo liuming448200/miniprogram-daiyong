@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{items}}" wx:key="id">
+          <swiper-item>
+            <image class="swiper-item" src="{{item.img}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section position-switch">
+      <view class="current-position">
+        <mp-icon type="field" icon="location" color="white" size="{{16}}"></mp-icon> 您的位置：中南大学
+      </view>
+      <view class="position-switch-button" bindtap="switchPosition">
+        <mp-icon icon="transfer2" color="white" size="{{16}}"></mp-icon> 切换
+      </view>
+    </view>
+    <view class="page-section sku-items">
+      <view class="sku-item" wx:for="{{items}}" wx:key="id">
+        <view class="sku-item-left">
+          <view class="sku-img-wrap">
+            <image class="sku-img" src="{{item.img}}"></image>
+          </view>
+          <view class="sku-detail">
+            <view class="sku-name">{{item.name}}</view>
+            <view class="sku-desc">{{item.desc}}</view>
+            <view class="sku-price">¥ {{item.price}}</view>
+          </view>
+        </view>
+        <view class="sku-item-right">
+          <view class="sku-select">
+            <view class="sku-noselect-hide" wx:if="{{item.selectedNum > 0}}"><mp-icon icon="more2" color="black" bindtap="removeProduct" data-id="{{item.id}}"></mp-icon> {{item.selectedNum}}</view>
+            <mp-icon type="field" icon="add2" color="#DE2127" bindtap="addProduct" data-id="{{item.id}}"></mp-icon>
+          </view>
+          <navigator class="sku-button" url="/pages/bless/index">查看祝福</navigator>
+        </view>
+      </view>
+    </view>
+    <view class="pay-line" wx:if="{{selectedProductList.length > 0}}">
+      <view class="pay-line-left">
+        <view class="pay-price">爱心接力！本店已累计爱心金额：{{totalPrice}}元</view>
+        <view class="pay-price-corner"></view>
+      </view>
+      <navigator class="pay-button" url="/pages/order/index">结算</navigator>
+    </view>
+  </view>
+</view>

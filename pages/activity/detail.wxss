@@ -1,0 +1,73 @@
+.container {
+  padding: 30rpx;
+}
+
+.header {
+  margin-top: 30rpx;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 28rpx;
+}
+
+.user-button {
+  color: #ffffff;
+  border-radius: 32rpx;
+  padding: 2rpx 30rpx;
+  background-color: #DE2127;
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+
+.extra {
+  font-size: 24rpx;
+  color: #a0a0a0;
+}
+
+.content {
+  margin-top: 30rpx;
+}
+
+.desc {
+  color: #2B2B2B;
+  font-size: 28rpx;
+}
+
+.enroll {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+
+.tip {
+  color: #a0a0a0;
+  font-size: 28rpx;
+}
+
+.form-style {
+  display: flex;
+  justify-content: center;
+}
+
+.input-style {
+  border: 1px solid #a0a0a0;
+  margin-top: 30rpx;
+}
+
+.button-style {
+  border-radius: 32rpx;
+  margin-top: 30rpx;
+}
+
+.impression {
+  margin-top: 30rpx;
+}
+
+.no-more {
+  text-align: center;
+  color: #959396;
+  margin-top: 30rpx;
+}

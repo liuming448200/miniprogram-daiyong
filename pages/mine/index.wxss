@@ -1,0 +1,73 @@
+.userinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 32rpx;
+}
+
+.point {
+  color: #DE2127;
+}
+
+.notice {
+  margin: 20rpx;
+  position: relative;
+}
+
+.red-dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background-color: #DE2127;
+  position: absolute;
+  top: 10rpx;
+  right: 0;
+}
+
+.menus-wrap {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.menus {
+  padding: 30rpx;
+  border-top: 2rpx solid #DBDBDB;
+  display: flex;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-common {
+  width: 128rpx;
+  height: 128rpx;
+  border: 2rpx solid #EFBA2C;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 32rpx;
+}

@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="sku-item">
+      <view class="sku-item-left">
+        <view class="sku-img-wrap">
+          <image class="sku-img" src="{{sku.img}}"></image>
+        </view>
+        <view class="sku-detail">
+          <view class="sku-name">爱心留言板</view>
+          <view class="sku-desc">已有<text style="color:#DE2127;">{{buyPersonList.length}}</text>人购买代用券，献出了爱心</view>
+          <view class="sku-desc">已有<text style="color:#DE2127;">{{blessPersonList.length}}</text>人送出了祝福</view>
+          <navigator class="sku-button" url="/pages/bless/send">送出祝福</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="bless-item" wx:for="{{blessPersonList}}" wx:key="id">
+      <view class="user-info">
+        <image class="userinfo-avatar" src="{{item.portrait}}" mode="cover"></image>
+        <view class="userinfo-nickname">
+          <view>{{item.name}}</view>
+          <view>{{item.updateTime}}</view>
+        </view>
+      </view>
+      <view class="user-message">
+        {{item.message}}
+      </view>
+      <view class="user-agree">
+        <view>
+          <mp-icon type="field" icon="like" color="#DE2127"></mp-icon> {{item.agreePersonList.length}}人点赞了她的活动感想
+        </view>
+        <view class="user-agree-button" bindtap="agree" data-id="{{item.id}}">
+          <mp-icon type="{{item.agreeMessage ? 'field' : 'outline'}}" icon="like" color="#ffffff" size="18"></mp-icon> {{item.agreeMessage ? "取消" : "点赞"}}
+        </view>
+      </view>
+    </view>
+    <view class="no-more">没有更多数据</view>
+  </view>
+</view>

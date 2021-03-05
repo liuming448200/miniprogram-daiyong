@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="current">
+    <view>当前积分：<text class="point">10</text></view>
+    <view class="current-tip">后续将陆续开通积分兑换服务，敬请期待！</view>
+  </view>
+  <view class="history">
+    <view class="history-title">变动记录：</view>
+    <view class="history-list">
+      <view class="history-item">
+        <view class="history-item-left">
+          <view>来嗦一碗螺蛳粉</view>
+          <view>2021-01-25 08:33:29</view>
+        </view>
+        <view class="point">+10</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="message-list">
+    <view class="message-item" wx:for="{{items}}" wx:key="id">
+      <view class="top">你购买的待用券被领用了！</view>
+      <view class="middle">
+        你购买的待用券于{{item.date}}由待用长沙项目组领用，派送给了有需要的人
+      </view>
+      <view class="bottom">
+        <view class="date">{{item.date}}</view>
+        <view class="user-button" bindtap="delete" data-id="{{item.id}}">删除</view>
+      </view>
+    </view>
+  </view>
+  <view class="no-more">没有更多数据</view>
+</view>

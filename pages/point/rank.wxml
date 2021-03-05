@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="header">
+    <view class="user-button {{byShopRank ? 'active' : ''}}" bindtap="shopRank">店铺排行</view>
+    <view class="user-button {{byShopRank ? '' : 'active'}}" bindtap="userRank">个人排行</view>
+  </view>
+  <view class="current" wx:if="{{!byShopRank}}">
+    <view>我的待用爱心积分：<text class="point">10</text></view>
+    <view class="point">第3名</view>
+  </view>
+  <view class="rank-list" wx:if="{{byShopRank}}">
+    <view class="rank-item" wx:for="{{shopRankList}}" wx:key="id">
+      <view>{{item.name}}</view>
+      <view class="rank-item-data">
+        <view class="rank-item-point">{{item.point}}</view>
+        <view>第{{item.rank}}名</view>
+      </view>
+    </view>
+  </view>
+  <view class="rank-list" wx:if="{{!byShopRank}}">
+    <view class="rank-item" wx:for="{{userRankList}}" wx:key="id">
+      <view>{{item.name}}</view>
+      <view class="rank-item-data">
+        <view class="rank-item-point">{{item.point}}</view>
+        <view>第{{item.rank}}名</view>
+      </view>
+    </view>
+  </view>
+</view>
